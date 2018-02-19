@@ -22,7 +22,7 @@ class user extends CI_Controller
     $data['ms'] = $this->learning_model->showdata();
 
     $title['mypage']="Learning Resource Platform";
-    $this->load->view('template/header',$title);
+    $this->load->view('template/header1',$title);
     $this->load->view('functions/shell');
     $this->load->view('Learning/profile',$data);
     $this->load->view('template/footer');

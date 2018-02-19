@@ -65,14 +65,14 @@ if (isset($_SESSION['username'])){
      					           <div class="input-group">
      						                 <span class="input-group-addon"><i class="fa fa-user"></i></span>
      						                       <input type="text" class="form-control" name="username" placeholder="Username">
-                                      <?php echo form_error('username','<div class ="alert alert-danger">', '</div>'); ?>
      					           </div>
+                         <?php echo form_error('username','<div class ="alert alert-danger">', '</div>'); ?>
 
      					           <div class="input-group">
      						                 <span class="input-group-addon"><i class="fa fa-lock"></i></span>
      						                       <input  type="password" class="form-control" name="password" placeholder="Password">
-                                      <?php echo form_error('password','<div class ="alert alert-danger">', '</div>'); ?>
      					           </div>
+                         <?php echo form_error('password','<div class ="alert alert-danger">', '</div>'); ?>
      				      </form>
      			   </div>
            <div class="col-sm-4"></div>

@@ -22,6 +22,7 @@
       </div>
       <br />
       <br />
+
       <input class="btn btn-primary upload-button" type="submit" value="Upload" />
     </div>
     <div class="col-sm-3"></div>
@@ -35,7 +36,7 @@
 
 
 
-<div id="sidemenu">
+<!-- <div id="sidemenu">
 
   <div class="list-group">
 <a href="#" class="list-group-item list-group-item-action active">
@@ -46,4 +47,4 @@
 <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
 <a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
 </div>
-</div>
+</div> -->

@@ -53,6 +53,14 @@ if (isset($_SESSION['username'])){
       <div class="col-sm-4"></div>
     </div>
 
+    <div class="row wor">
+      <div class="col-sm-3"></div>
+     <div class="col-sm-6 text-center">
+         <span class="dhaa">Already have an account? <a class="lrp_signup" href="<?= base_url('learning')?>"> Sign In </a></span>
+     </div>
+      <div class="col-sm-3"></div>
+   </div>
+
     </div>
   </div>
 

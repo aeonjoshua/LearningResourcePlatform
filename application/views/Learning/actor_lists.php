@@ -37,14 +37,15 @@
           </tr>
         </thead>
     <tbody>
-          <?php foreach ($actor as $row) { ?>
-          <tr>
-            <td><?php echo $row ->title; ?></td>
-            <td><?php echo $row ->course; ?></td>
-            <td><?php echo $row ->uploader; ?></td>
-            <td><?php echo $row ->dateuploaded; ?></td>
-          </tr>
-        <?php } ?>
+      <?php foreach ($actor as $row) { ?>
+      <tr>
+        <td><?php echo $row ->title; ?></td>
+        <td><?php echo $row ->course; ?></td>
+        <td><?php echo $row ->uploader; ?></td>
+        <td><?php echo $row ->dateuploaded; ?></td>
+      </tr>
+    <?php } ?>
+
     </tbody>
 </table>
 

@@ -26,6 +26,12 @@
     <script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"> </script>
     <script src="<?php echo base_url(); ?>assets/js/BootSideMenu.js"> </script>
     <script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"> </script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script>
+    $(function(){
+      $("#includedContent").load("./output/1018197-Fractional-Distillation-of-an-Ethanol-water-Mixture-5.html");
+    });
+    </script>
   <!--  <script src="<?php echo base_url(); ?>assets\DataTables-1.10.16\css\dataTables.bootstrap.min.css"> </script>
     <script src="<?php echo base_url(); ?>assets\DataTables-1.10.16\js\dataTables.bootstrap.min.js"> </script>
     <script src="<?php echo base_url(); ?>assets\DataTables-1.10.16\js\jquery.dataTables.min.js"> </script>

@@ -1,21 +1,11 @@
-<div id="sidemenu">
+<?php include_once './application/uploaded/pdf2html/Converter.php' ?>
 
-  <div class="list-group">
-<a href="#" class="list-group-item list-group-item-action active">
-  Cras justo odio
-</a>
-<a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-<a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
-<a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-<a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
-</div>
-</div>
-
-
-  <a href ="<?php echo base_url(); ?>user/profile"> Back to Profile </a>
-
-
-<p><?php echo $file_name ?> was uploaded successfully!</p>
-<a href="<?php echo base_url('upload') ?>">Upload another</a>
+  <a id="conv" href ="<?php echo base_url(); ?>user/profile"> Back to Profile </a>
+<!-- </a> -->
+<!-- <p><?php// echo $file_name ?> was uploaded successfully!</p> -->
+<?php
+//  exec('php C:\wamp64\www\ci\uploads\pdf2html\Converter.php');
+ //include './uploads/pdf2html/Converter.php' ?>
+<!-- <a href="<?php //echo base_url('upload') ?>">Upload another</a> -->
 <!--wala pang view-->
-<a href="<?php echo base_url('view_projects') ?>">View Projects</a>
+<!-- <a href="<?php //echo base_url('view_projects') ?>">View Projects</a> -->

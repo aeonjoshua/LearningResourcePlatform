@@ -8,7 +8,7 @@
           if ($_SESSION['user_logged'] == FALSE) {
           $this->session->set_flashdata("error","Please login first.");
           redirect("");
-          
+
         }
     }
 
@@ -26,6 +26,7 @@
 
     public function do_upload()
     {
+      // include './uploads/pdf2html/converter.php';
       $page['title'] = "Upload";
       $this->load->model('learning_model');
 
@@ -74,8 +75,17 @@
         */
 
 //kukunin yung title at path ng file tapos insert sa db
+        // exec("".echo base_url('/uploads/pdf2html/pdf2htmlex.exe')."--dest-dir".echo base_url('/uploads/pdf2html/output').$upload_data['file_name']."");
+        // convertNow($upload_data['file_name']);
+        $fp=fopen('./application/uploaded/pdf2html/Converter.php','w');
+        $f = $upload_data['file_name'];
+        fwrite($fp, '<?php
+        exec("pdf2htmlex.exe --dest-dir output uploads/'.$f.'");?>');
+        fclose($fp);
+
+//binago muna pang debug
         $newpath = end((explode("ci/", $upload_data['full_path'])));
-        $this->learning_model->insert_data($projtitle, $newpath, $course, $upload_data['file_name'],$_SESSION ['username']);
+        $this->learning_model->insert_data($projtitle, $newpath, $course, $upload_data['raw_name'],$_SESSION ['username']);
 
         $data = array('upload_data' => $this->upload->data());
 
